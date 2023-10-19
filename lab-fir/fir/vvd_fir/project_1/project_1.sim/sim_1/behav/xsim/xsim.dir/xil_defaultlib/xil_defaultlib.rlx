@@ -1,0 +1,10 @@
+0.7
+2020.2
+Apr 18 2022
+15:53:03
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/bram11.v,1697689433,verilog,,/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/fir.v,,bram11,,,,,,,,
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/fir_tb.v,1697689449,verilog,,,,fir_tb,,,,,,,,
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/Xferloop.v,1697690509,verilog,,/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/axi_lite_control.v,,Xferloop,,,,,,,,
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/axi_lite_control.v,1697689228,verilog,,/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/bram11.v,,axi_lite_control,,,,,,,,
+/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/fir.v,1697689206,verilog,,/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/fir_tb.v,,fir,,,,,,,,

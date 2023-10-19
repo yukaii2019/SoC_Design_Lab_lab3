@@ -1,0 +1,2024 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 2270083
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Oct 19 12:15:07 CST 2023
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Ubuntu
+OS Version: 5.15.0-84-generic
+OS Architecture: amd64
+Available processors (cores): 24
+
+Display: localhost:14.0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/opt/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/opt/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ykhsieh
+User home directory: /home/ykhsieh
+User working directory: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2022.1
+RDI_DATADIR: /opt/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: /home/ykhsieh/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/ykhsieh/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/ykhsieh/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/opt/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/vivado.log
+Vivado journal file: 	/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2270083-MediaHLS
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2022.1
+XILINX_SDK: /opt/Xilinx/Vitis/2022.1
+XILINX_VITIS: /opt/Xilinx/Vitis/2022.1
+XILINX_VIVADO: /opt/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2022.1
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,998 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,945 MB. GUI used memory: 57 MB. Current time: 10/19/23, 12:15:08 PM CST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// [GUI Memory]: 97 MB (+99666kb) [00:00:13]
+// [Engine Memory]: 1,957 MB (+1901025kb) [00:00:13]
+// [GUI Memory]: 103 MB (+1158kb) [00:00:14]
+selectButton("NEXT", "Next >"); // JButton
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7z020"); // OverlayTextField
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z020clg400-1 ; 400 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "xc7z020clg400-1", 0); // r
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z020clg400-1 ; 400 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "xc7z020clg400-1", 0); // r
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z020clg400-1 ; 400 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 2, "xc7z020clg400-1", 0, false, false, false, false, true); // r - Double Click
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project project_1 /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1 -part xc7z020clg400-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 17 seconds
+dismissDialog("Create Project"); // bA
+dismissDialog("New Project"); // f
+// [GUI Memory]: 110 MB (+1706kb) [00:00:25]
+// [GUI Memory]: 122 MB (+6275kb) [00:00:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,046 MB. GUI used memory: 64 MB. Current time: 10/19/23, 12:15:28 PM CST
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "fir.v"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new 
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/fir.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,072 MB (+17410kb) [00:01:00]
+// Tcl Message: add_files /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/fir.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 2,121 MB. GUI used memory: 75 MB. Current time: 10/19/23, 12:16:03 PM CST
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Xferloop"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 24 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "axi_lite_control"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 39 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/Xferloop.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/Xferloop.v 
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/axi_lite_control.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sources_1/new/axi_lite_control.v 
+// [GUI Memory]: 135 MB (+7592kb) [00:02:39]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Modules"); // I
+// HMemoryUtils.trashcanNow. Engine heap size: 2,173 MB. GUI used memory: 73 MB. Current time: 10/19/23, 12:17:43 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+// [Engine Memory]: 2,190 MB (+14856kb) [00:02:47]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v)]", 3, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("fir.v", 307, 306); // be
+// Elapsed time: 16 seconds
+selectCodeEditor("fir.v", 190, 82); // be
+typeControlKey((HResource) null, "fir.v", 'v'); // be
+// Elapsed time: 10 seconds
+selectCodeEditor("fir.v", 273, 299); // be
+typeControlKey((HResource) null, "fir.v", 'v'); // be
+// Elapsed time: 24 seconds
+selectCodeEditor("fir.v", 223, 419); // be
+typeControlKey((HResource) null, "fir.v", 'v'); // be
+selectCodeEditor("fir.v", 622, 246); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,232 MB. GUI used memory: 75 MB. Current time: 10/19/23, 12:20:13 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,265 MB. GUI used memory: 75 MB. Current time: 10/19/23, 12:20:33 PM CST
+// Elapsed time: 107 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false); // D
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // g
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_CREATE_FILE, "Create File"); // a
+// Tcl Command: 'file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1'
+// Tcl Message: file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1 
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "constraints"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Constraints File"); // J
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 20 seconds
+// Tcl Command: 'file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new'
+dismissDialog("Add Sources"); // c
+// Tcl Message: file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new 
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "fir_tb"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Tcl Command: 'file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new'
+dismissDialog("Create Source File"); // F
+// Tcl Message: file mkdir /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new 
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "BRAM11"); // aa
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "bram11"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 33 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/fir_tb.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/fir_tb.v 
+// Tcl Message: close [ open /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/bram11.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/bram11.v 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Modules"); // I
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // D
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,292 MB. GUI used memory: 76 MB. Current time: 10/19/23, 12:22:03 PM CST
+// [Engine Memory]: 2,301 MB (+1521kb) [00:07:06]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,317 MB. GUI used memory: 76 MB. Current time: 10/19/23, 12:24:13 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 141 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, constraints.xdc]", 4, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fir_tb (fir_tb.v)]", 7, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fir_tb (fir_tb.v)]", 7, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false, false, false, false, true, false); // n - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 2,345 MB. GUI used memory: 77 MB. Current time: 10/19/23, 12:24:33 PM CST
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_SETTINGS, "Simulation Settings..."); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ADVANCED, "Advanced", 4); // i
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // i
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_COMPILATION, "Compilation", 0); // i
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // i
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 153 MB (+11766kb) [00:09:48]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property -name {xsim.simulate.runtime} -value {100000ns} -objects [get_filesets sim_1] 
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+// [GUI Memory]: 169 MB (+8326kb) [00:09:52]
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'fir_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'fir_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj fir_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot fir_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "fir_tb_behav -key {Behavioral:sim_1:Functional:fir_tb} -tclbatch {fir_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source fir_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,410 MB. GUI used memory: 102 MB. Current time: 10/19/23, 12:24:58 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 100000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 100000ns 
+// 'd' command handler elapsed time: 5 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:06 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,412 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:07 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // D
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:09 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:10 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:11 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:11 PM CST
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // D
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // D
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:25:12 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,413 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:16 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:25:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:25:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:17 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:18 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,414 MB. GUI used memory: 100 MB. Current time: 10/19/23, 12:25:18 PM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:25:33 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // n
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 0); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,471 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:26:28 PM CST
+// [Engine Memory]: 2,471 MB (+57868kb) [00:11:29]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,804 MB. GUI used memory: 101 MB. Current time: 10/19/23, 12:26:31 PM CST
+// [Engine Memory]: 2,805 MB (+220364kb) [00:11:30]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 183 MB (+5899kb) [00:11:31]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8088.242 ; gain = 0.000 ; free physical = 105394 ; free virtual = 119590 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8477.277 ; gain = 0.000 ; free physical = 104915 ; free virtual = 119111 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 8608.418 ; gain = 520.176 ; free physical = 104810 ; free virtual = 119006 
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+dismissDialog("Report Timing Summary"); // bA
+// [GUI Memory]: 194 MB (+2029kb) [00:11:36]
+// [Engine Memory]: 2,946 MB (+1528kb) [00:11:36]
+// [GUI Memory]: 204 MB (+359kb) [00:15:20]
+// Elapsed time: 314 seconds
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v), genblk1.axi_lite_control_U0 : axi_lite_control (axi_lite_control.v)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v), genblk1.axi_lite_control_U0 : axi_lite_control (axi_lite_control.v)]", 2, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("axi_lite_control.v", 265, 151); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 2,948 MB. GUI used memory: 137 MB. Current time: 10/19/23, 12:32:03 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v), genblk1.Xferloop_U0 : Xferloop (Xferloop.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fir (fir.v), genblk1.Xferloop_U0 : Xferloop (Xferloop.v)]", 3, false, false, false, false, false, true); // D - Double Click
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("Xferloop.v", 107, 116); // be
+selectCodeEditor("Xferloop.v", 120, 222); // be
+// HMemoryUtils.trashcanNow. Engine heap size: 2,985 MB. GUI used memory: 138 MB. Current time: 10/19/23, 12:32:28 PM CST
+// Elapsed time: 13 seconds
+selectCodeEditor("Xferloop.v", 259, 209); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bA
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'fir_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'fir_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj fir_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot fir_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "fir_tb_behav -key {Behavioral:sim_1:Functional:fir_tb} -tclbatch {fir_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,017 MB. GUI used memory: 143 MB. Current time: 10/19/23, 12:32:46 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source fir_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 100000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 100000ns 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp to /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:32:52 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 77 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'r' command handler elapsed time: 4 seconds
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,025 MB. GUI used memory: 139 MB. Current time: 10/19/23, 12:34:19 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,026 MB. GUI used memory: 139 MB. Current time: 10/19/23, 12:34:19 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,013 MB. GUI used memory: 115 MB. Current time: 10/19/23, 12:34:20 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8688.145 ; gain = 0.000 ; free physical = 104760 ; free virtual = 118957 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+dismissDialog("Reloading"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+// Elapsed time: 13 seconds
+selectCodeEditor("Xferloop.v", 745, 108); // be
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "axi_lite_control.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fir_tb.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 1); // m
+selectCodeEditor("constraints.xdc", 344, 3); // be
+selectCodeEditor("constraints.xdc", 312, 33); // be
+selectCodeEditor("constraints.xdc", 541, 199); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,019 MB. GUI used memory: 140 MB. Current time: 10/19/23, 12:35:42 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,019 MB. GUI used memory: 141 MB. Current time: 10/19/23, 12:35:42 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: DEBUG_GRAPH_STALE
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,000 MB. GUI used memory: 117 MB. Current time: 10/19/23, 12:35:43 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+dismissDialog("Reloading"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:35:49 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 26 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,017 MB. GUI used memory: 142 MB. Current time: 10/19/23, 12:36:19 PM CST
+// Engine heap size: 3,017 MB. GUI used memory: 142 MB. Current time: 10/19/23, 12:36:19 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,001 MB. GUI used memory: 119 MB. Current time: 10/19/23, 12:36:23 PM CST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104762 ; free virtual = 118959 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104690 ; free virtual = 118887 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+setText(PAResourceTtoZ.TimingDialogUtils_RESULTS_NAME, "timing_1"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 304, 36); // be
+selectCodeEditor("constraints.xdc", 150, 11); // be
+selectCodeEditor("constraints.xdc", 327, 6); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,022 MB. GUI used memory: 145 MB. Current time: 10/19/23, 12:36:58 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,022 MB. GUI used memory: 146 MB. Current time: 10/19/23, 12:36:58 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:37:05 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+selectCodeEditor("constraints.xdc", 650, 332); // be
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 27 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Tcl Message: open_run synth_1 -name synth_1 
+// TclEventType: READ_XDC_FILE_START
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,013 MB. GUI used memory: 122 MB. Current time: 10/19/23, 12:37:38 PM CST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104739 ; free virtual = 118936 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104673 ; free virtual = 118870 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+setText(PAResourceTtoZ.TimingDialogUtils_RESULTS_NAME, "timing_1"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 311, 38); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,026 MB. GUI used memory: 149 MB. Current time: 10/19/23, 12:38:00 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,026 MB. GUI used memory: 149 MB. Current time: 10/19/23, 12:38:00 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:38:04 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,018 MB. GUI used memory: 125 MB. Current time: 10/19/23, 12:38:38 PM CST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104708 ; free virtual = 118905 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104642 ; free virtual = 118839 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fir_tb.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 158, 10); // be
+// Elapsed time: 17 seconds
+selectCodeEditor("constraints.xdc", 324, 38); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,033 MB. GUI used memory: 151 MB. Current time: 10/19/23, 12:39:22 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,033 MB. GUI used memory: 152 MB. Current time: 10/19/23, 12:39:22 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:39:26 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,023 MB. GUI used memory: 128 MB. Current time: 10/19/23, 12:39:54 PM CST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104704 ; free virtual = 118902 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104641 ; free virtual = 118839 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+setText(PAResourceTtoZ.TimingDialogUtils_RESULTS_NAME, "timing_1"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fir_tb.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 156, 8); // be
+selectCodeEditor("constraints.xdc", 334, 3); // be
+selectCodeEditor("constraints.xdc", 354, 97); // be
+selectCodeEditor("constraints.xdc", 311, 36); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // g
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,037 MB. GUI used memory: 152 MB. Current time: 10/19/23, 12:40:20 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,037 MB. GUI used memory: 153 MB. Current time: 10/19/23, 12:40:20 PM CST
+// Tcl Message: refresh_design 
+// TclEventType: DEBUG_GRAPH_STALE
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 3,021 MB. GUI used memory: 131 MB. Current time: 10/19/23, 12:40:21 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+dismissDialog("Reloading"); // bA
+dismissDialog("Critical Messages"); // X
+selectCodeEditor("constraints.xdc", 472, 177); // be
+// Elapsed time: 69 seconds
+selectCodeEditor("constraints.xdc", 405, 340); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Xferloop.v", 5); // m
+selectCodeEditor("Xferloop.v", 145, 141); // be
+selectCodeEditor("Xferloop.v", 285, 138); // be
+selectCodeEditor("Xferloop.v", 120, 276); // be
+selectCodeEditor("Xferloop.v", 81, 214); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bA
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 218 MB (+4257kb) [00:26:58]
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'fir_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'fir_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj fir_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot fir_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "fir_tb_behav -key {Behavioral:sim_1:Functional:fir_tb} -tclbatch {fir_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,063 MB. GUI used memory: 163 MB. Current time: 10/19/23, 12:42:02 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source fir_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 100000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 100000ns 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 0); // m
+selectCodeEditor("constraints.xdc", 164, 8); // be
+selectCodeEditor("constraints.xdc", 340, 6); // be
+selectCodeEditor("constraints.xdc", 160, 3); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // f
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:42:45 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fir_tb.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 0); // m
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 11 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 164 MB. Current time: 10/19/23, 12:43:22 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,070 MB. GUI used memory: 164 MB. Current time: 10/19/23, 12:43:22 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: DESIGN_CLOSE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: close_design 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,063 MB. GUI used memory: 140 MB. Current time: 10/19/23, 12:43:25 PM CST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104601 ; free virtual = 118799 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8703.152 ; gain = 0.000 ; free physical = 104543 ; free virtual = 118741 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// Elapsed time: 22 seconds
+setText(PAResourceTtoZ.TimingDialogUtils_RESULTS_NAME, "timing_1"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'r' command handler elapsed time: 20 seconds
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // X
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 306, 36); // be
+selectCodeEditor("constraints.xdc", 590, 110); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 230 MB (+782kb) [00:29:00]
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,084 MB. GUI used memory: 167 MB. Current time: 10/19/23, 12:44:02 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,084 MB. GUI used memory: 167 MB. Current time: 10/19/23, 12:44:02 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: close_design 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Xferloop.v", 3); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+selectButton("OptionPane.button", "Yes"); // JButton
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bA
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'fir_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from '/opt/Xilinx/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'fir_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xvlog --incr --relax -prj fir_tb_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator v2022.1 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fir_tb_behav xil_defaultlib.fir_tb xil_defaultlib.glbl -log elaborate.log  Using 8 slave threads. Starting static elaboration Pass Through NonSizing Optimizer Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "fir_tb_behav -key {Behavioral:sim_1:Functional:fir_tb} -tclbatch {fir_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,005 MB. GUI used memory: 147 MB. Current time: 10/19/23, 12:44:16 PM CST
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source fir_tb.tcl 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 100000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'fir_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 100000ns 
+// 'd' command handler elapsed time: 6 seconds
+dismissDialog("Run Simulation"); // e
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:44:21 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 0); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 16 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 147 MB. Current time: 10/19/23, 12:44:50 PM CST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8706.133 ; gain = 0.000 ; free physical = 104595 ; free virtual = 118793 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8706.133 ; gain = 0.000 ; free physical = 104535 ; free virtual = 118733 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+selectCodeEditor("constraints.xdc", 153, 11); // be
+selectCodeEditor("constraints.xdc", 322, 5); // be
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // g
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,091 MB. GUI used memory: 174 MB. Current time: 10/19/23, 12:45:10 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 3,091 MB. GUI used memory: 175 MB. Current time: 10/19/23, 12:45:10 PM CST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: close_design 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bA
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/utils_1/imports/synth_1/fir.dcp with file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/fir.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 24 
+// Tcl Message: [Thu Oct 19 12:45:18 2023] Launched synth_1... Run output will be captured here: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bA
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 25 seconds
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 3,078 MB. GUI used memory: 150 MB. Current time: 10/19/23, 12:45:47 PM CST
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7z020clg400-1 
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 3,103 MB (+9270kb) [00:30:47]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8708.141 ; gain = 0.000 ; free physical = 104568 ; free virtual = 118766 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc:3] 
+// Tcl Message: Finished Parsing XDC File [/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/constrs_1/new/constraints.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8708.141 ; gain = 0.000 ; free physical = 104514 ; free virtual = 118712 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fir_tb.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+// Elapsed time: 59 seconds
+selectCodeEditor("constraints.xdc", 529, 192); // be
+// Elapsed time: 38 seconds
+selectCodeEditor("constraints.xdc", 248, 340); // be
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false, false, false, false, false, true); // a - Double Click
+expandTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a
+collapseTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, General Information]", 0, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Timer Settings]", 1, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Timer Settings]", 1, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "0.541 ns"); // g
+// PAPropertyPanels.initPanels (Path 1) elapsed time: 0.2s
+// [GUI Memory]: 247 MB (+5290kb) [00:33:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,148 MB. GUI used memory: 187 MB. Current time: 10/19/23, 12:48:13 PM CST
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Hold 0.078 ns]", 9, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Pulse Width 4.020 ns]", 10, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Setup 0.541 ns]", 8, false); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,120 MB. GUI used memory: 178 MB. Current time: 10/19/23, 1:18:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,120 MB. GUI used memory: 174 MB. Current time: 10/19/23, 1:48:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,120 MB. GUI used memory: 174 MB. Current time: 10/19/23, 2:18:13 PM CST
+// Elapsed time: 5493 seconds
+selectCodeEditor("constraints.xdc", 365, 158); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+// Elapsed time: 58 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 25, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: UTILIZATION_RESULT_GENERATED
+dismissDialog("Report Utilization"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,122 MB. GUI used memory: 181 MB. Current time: 10/19/23, 2:20:57 PM CST
+// Tcl Message: report_utilization -name utilization_1 
+collapseTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4); // l
+expandTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory, LUT as Shift Register]", 5, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory, LUT as Shift Register]", 5, false, false, false, false, false, true); // l - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Logic]", 6, false); // l
+collapseTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers]", 7); // l
+expandTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers]", 7); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP, DSPs, DSP48E1 only]", 12, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, IO and GT Specific, Bonded IOB]", 14, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Clocking, BUFGCTRL]", 16, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Clocking, BUFGCTRL]", 16, false, false, false, false, false, true); // l - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "fir ; 274", 0, "fir", 0, true); // K - Node
+collapseTreeTable((HResource) null, "fir ; 274", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "fir ; 274", 0, "fir", 0, true, false, false, false, false, true); // K - Double Click - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic]", 2, true); // l - Node
+collapseTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic]", 2); // l
+expandTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic]", 2); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true); // y - Node
+collapseTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true, false, false, false, false, true); // y - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true); // y - Node
+expandTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true, false, false, false, false, true); // y - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "0", 4, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true); // y - Node
+collapseTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true, false, false, false, false, true); // y - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "330", 2, true); // y - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "fir", 0, true); // y - Node
+expandTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "86", 2, false); // y
+expandTreeTable((HResource) null, "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "86", 2, false, false, false, false, false, true); // y - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory, LUT as Shift Register]", 5, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Logic]", 6, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Logic]", 6, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers]", 7, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false, false, false, false, false, true); // l - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true, false, false, false, false, true); // l - Double Click - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP]", 10, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP, DSPs]", 11, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP, DSPs, DSP48E1 only]", 12, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, IO and GT Specific, Bonded IOB]", 14, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Black Boxes]", 19, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Instantiated Netlists]", 20, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Black Boxes]", 19, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false); // l
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "OBUF ;  169 ;  IO", 1, "OBUF", 0); // ar
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " Flop & Latch", 2); // ar
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " Flop & Latch", 2, false, false, false, false, true); // ar - Double Click
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " Flop & Latch", 2); // ar
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " 263", 1); // ar
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " 263", 1, false, false, false, false, true); // ar - Double Click
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " Flop & Latch", 2); // ar
+selectTable(PAResourceTtoZ.UtilizationTreeTablePanel_PRIMITIVES_TABLE, "FDRE ;  263 ;  Flop & Latch", 0, " Flop & Latch", 2, false, false, false, false, true); // ar - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.Xferloop_U0 (Xferloop), Leaf Cells (374)]", 6); // bD
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Methodology]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_METHODOLOGY
+// 'cN' command handler elapsed time: 4 seconds
+dismissDialog("Report Methodology"); // a
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 27, false); // n
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 25, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+dismissDialog("Report Utilization"); // a
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers]", 7, true); // l - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "Leaf Cells (84) ; 84", 3, "Leaf Cells (84)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "Leaf Cells (84) ; 84", 3, "Leaf Cells (84)", 0, false); // K
+expandTreeTable((HResource) null, "Leaf Cells (84) ; 84", 3); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "Leaf Cells (84) ; 84", 3, "Leaf Cells (84)", 0, false, false, false, false, false, true); // K - Double Click
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "fir", 0, true); // K - Node
+collapseTreeTable((HResource) null, "fir ; 330", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "fir", 0, true, false, false, false, false, true); // K - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "fir", 0, true); // K - Node
+expandTreeTable((HResource) null, "fir ; 330", 0); // K
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_NOTES, "Utilization_showbottomutilizationpanel"); // w: FALSE
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "330", 1, true); // K - Node
+collapseTreeTable((HResource) null, "fir ; 330", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "330", 1, true, false, false, false, false, true); // K - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "330", 1, true); // K - Node
+expandTreeTable((HResource) null, "fir ; 330", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "330", 1, true, false, false, false, false, true); // K - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice Registers)", "fir ; 330", 0, "330", 1, true); // K - Node
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_EXPAND_ALL, "Utilization_expand_all"); // D
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_PERCENTAGE, (String) null); // w: TRUE
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_PERCENTAGE, (String) null); // w: FALSE
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_NUMBER, "PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_PERCENTAGE"); // w: TRUE
+selectButton(PAResourceTtoZ.UtilizationTreeTablePanel_SHOW_PERCENTAGE, (String) null); // w: FALSE
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP, DSPs, DSP48E1 only]", 12, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, IO and GT Specific]", 13, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, IO and GT Specific, Bonded IOB]", 14, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Clocking, BUFGCTRL]", 16, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Black Boxes]", 19, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Instantiated Netlists]", 20, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL
+selectTab((HResource) null, (HResource) null, "Netlist", 1); // aL
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+dismissDialog("Report Timing Summary"); // aJ
+selectTab((HResource) null, (HResource) null, "Timing", 6); // aL
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 274 ; 330 ; 0.0 ; 0 ; 3 ; Thu Oct 19 12:45:19 CST 2023 ; 00:00:20 ; Vivado Synthesis Defaults (Vivado Synthesis 2022) ; Vivado Synthesis Default Reports (Vivado Synthesis 2022) ; xc7z020clg400-1 ; MediaHLS ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az - Node
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL
+collapseTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Design Initialization (init_design) ;  ;  ;  ; ", 6); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Design Initialization (init_design) ;  ;  ;  ; ", 6); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Design Initialization (init_design) ;  ;  ;  ; ", 6, "Design Initialization (init_design)", 0, true, false, false, false, false, true); // O - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Synth Design ; report_utilization ;  ; Thu Oct 19 12:45:37 CST 2023 ; 8237", 2, "Utilization - Synth Design", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Synth Design ; report_utilization ;  ; Thu Oct 19 12:45:37 CST 2023 ; 8237", 2); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Synth Design ; report_utilization ;  ; Thu Oct 19 12:45:37 CST 2023 ; 8237", 2, "Utilization - Synth Design", 0, false, false, false, false, false, true); // O - Double Click
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synthesis_report ;  ;  ; Thu Oct 19 12:45:37 CST 2023 ; 27472", 3, "synthesis_report", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synthesis_report ;  ;  ; Thu Oct 19 12:45:37 CST 2023 ; 27472", 3); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synthesis_report ;  ;  ; Thu Oct 19 12:45:37 CST 2023 ; 27472", 3, "synthesis_report", 0, false, false, false, false, false, true); // O - Double Click
+closeView(PAResourceOtoP.PAViews_PAR_REPORT, "PAR Report"); // c
+selectCodeEditor("Xferloop.v", 541, 174); // be
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Place Design ; report_utilization ;  ;  ; ", 15, "Utilization - Place Design", 0, false); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Place Design ; report_utilization ;  ;  ; ", 15, "Utilization - Place Design", 0, false); // O
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Place Design ; report_utilization ;  ;  ; ", 15); // O
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Utilization - Place Design ; report_utilization ;  ;  ; ", 15, "Utilization - Place Design", 0, false, false, false, false, false, true); // O - Double Click
+// Elapsed time: 75 seconds
+selectCodeEditor("Xferloop.v", 454, 105); // be
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false, false, false, false, false, true); // y - Double Click
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115 ; 86 ; 0 ; 0 ; 0", 1, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false); // y
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control)]", 3); // bD
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, Leaf Cells (416)]", 2); // bD
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, Leaf Cells (416)]", 2); // bD
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4); // bD
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4); // bD
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4, false); // bD
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4, true, false, false, false, false, true); // bD - Double Click - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4, true); // bD - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[fir, genblk1.axi_lite_control_U0 (axi_lite_control), Nets (335)]", 4, false, false, false, false, false, true); // bD - Double Click
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "0", 4, true); // y - Node
+collapseTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "0", 4, true, false, false, false, false, true); // y - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0, "0", 4, true); // y - Node
+expandTreeTable((HResource) null, "fir ; 274 ; 330 ; 3 ; 329 ; 1", 0); // y
+// Elapsed time: 16 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic]", 2, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "genblk1.Xferloop_U0 (Xferloop) ; 159", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115", 2, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "genblk1.Xferloop_U0 (Xferloop) ; 159", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice LUTs)", "genblk1.axi_lite_control_U0 (axi_lite_control) ; 115", 2, "genblk1.axi_lite_control_U0 (axi_lite_control)", 0, false); // K
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory, LUT as Shift Register]", 5, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false, false, false, false, false, true); // l - Double Click
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Specific Feature]", 17, true, false, false, false, false, true); // l - Double Click - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Primitives]", 18, false); // l
+selectTab((HResource) null, (HResource) null, "Timing", 6); // aL
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 6, true); // a - Node
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs, LUT as Memory]", 4, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers]", 7, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "fir ; 330", 0, "fir", 0, true); // K - Node
+collapseTreeTable((HResource) null, "fir ; 330", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "fir ; 330", 0, "fir", 0, true, false, false, false, false, true); // K - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "fir ; 330", 0, "fir", 0, true); // K - Node
+expandTreeTable((HResource) null, "fir ; 330", 0); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "fir ; 330", 0, "fir", 0, true, false, false, false, false, true); // K - Double Click - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+expandTreeTable((HResource) null, "genblk1.Xferloop_U0 (Xferloop) ; 160", 1); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false, false, false, false, false, true); // K - Double Click
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Register as Flip Flop)", "genblk1.Xferloop_U0 (Xferloop) ; 160", 1, "genblk1.Xferloop_U0 (Xferloop)", 0, false); // K
+// Elapsed time: 194 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice LUTs]", 3, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic]", 2, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP]", 10, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, DSP, DSPs]", 11, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+// Elapsed time: 121 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Hierarchy]", 0, false); // l
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l
+// Elapsed time: 124 seconds
+selectCodeEditor("Xferloop.v", 379, 118); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "constraints.xdc", 2); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 3,130 MB. GUI used memory: 189 MB. Current time: 10/19/23, 2:50:58 PM CST
+// Elapsed time: 937 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTab((HResource) null, (HResource) null, "Timing", 6); // aL
+// Elapsed time: 88 seconds
+selectCodeEditor("constraints.xdc", 324, 54); // be
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Inter-Clock Paths]", 11, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths]", 6, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Setup 0.541 ns]", 8, false); // a
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "Path 1", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "Path 1", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "Path 1", 0, false, false, false, false, true); // h - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Methodology Summary]", 4, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+// Elapsed time: 116 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ao
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // ao
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // ao
+// Elapsed time: 11 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD, "Constraints Wizard..."); // ar
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aj
+// Run Command: PAResourceCommand.PACommandNames_TIMING_CONSTRAINTS_WIZARD
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // n - Popup Trigger
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // n
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Hold 0.078 ns]", 9, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk, Setup 0.541 ns]", 8, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Intra-Clock Paths, axis_clk]", 7, true); // a - Node
+selectButton(PAResourceItoN.IctElementSummarySectionPanel_SETUP, "0.541 ns"); // g
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 5 ; 0.62193006 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[30]/D ; 9.273714 ; 7.7679996 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 4, "9", 3, false, false, false, false, true); // h - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,199 MB. GUI used memory: 198 MB. Current time: 10/19/23, 2:57:13 PM CST
+// Elapsed time: 11 seconds
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Properties", 1); // i
+// [Engine Memory]: 3,280 MB (+23142kb) [02:42:18]
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Report", 2); // i
+// Elapsed time: 23 seconds
+selectTab((HResource) null, (String) null, (HResource) null, "Netlist", 1, false, true); // aL - Double Click
+maximizeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // aA
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+selectTab(PAResourceQtoS.ReportTimingSummaryDialog_REPORT_TIMING_SUMMARY_DIALOG_TABBED, PAResourceQtoS.ReportTimingSummaryDialog_ADVANCED, "Advanced", 1); // i
+selectCheckBox(PAResourceAtoD.CommandOutputOptionsPanel_EXPORT_TO_FILE, "Export to file:", true); // g: TRUE
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CommandOutputOptionsPanel_CHOOSE_OUTPUT_FILE_FOR_TIMING_REPORT, "timing_report"); // ap
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'r' command handler elapsed time: 29 seconds
+dismissDialog("Report Timing Summary"); // aJ
+// TclEventType: TIMING_SUMMARY_UPDATED
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2 -file /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/timing_report.txt 
+// Tcl Message: INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // n
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// 'r' command handler elapsed time: 5 seconds
+dismissDialog("Report Timing Summary"); // aJ
+// [GUI Memory]: 259 MB (+481kb) [02:43:31]
+// Elapsed time: 49 seconds
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTab((HResource) null, (HResource) null, "Timing", 6); // aL
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_NEGATIVE_SLACK, "0.541 ns"); // g
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 2 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/sm_tdata_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 1, "9", 3, false, false, false, false, true); // h - Double Click
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "8", 2); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "Path 1", 0); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 1 ; 0.54093 ; 8 ; 9 ; 4 ; genblk1.Xferloop_U0/mul__0/CLK ; genblk1.Xferloop_U0/acc_reg[29]/D ; 9.354714 ; 7.8489995 ; 1.5057142 ; 10.0 ; axis_clk ; axis_clk ;  ; 0.03535534", 0, "Path 1", 0, false, false, false, false, true); // h - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,378 MB. GUI used memory: 200 MB. Current time: 10/19/23, 2:59:33 PM CST
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "Path Type ; Setup (Max at Slow Process Corner)", 5, "Setup (Max at Slow Process Corner)", 1); // C
+// [Engine Memory]: 3,483 MB (+40942kb) [02:44:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 207 MB. Current time: 10/19/23, 2:59:58 PM CST
+// [GUI Memory]: 273 MB (+276kb) [02:45:07]
+// [GUI Memory]: 286 MB (+66kb) [02:52:43]
+// Elapsed time: 491 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Path 2 - timing_2", 8); // m
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Methodology Summary]", 4, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Check Timing]", 5, true); // a - Node
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Timer Settings]", 1, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, General Information]", 0, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Clock Summary]", 3, false); // a
+selectTree(PAResourceItoN.NavigableTimingReportTab_TIMING_REPORT_NAVIGATION_TREE, "[Root, Design Timing Summary]", 2, false); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 216 MB. Current time: 10/19/23, 3:29:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 3:59:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 4:29:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 4:59:59 PM CST
+// Elapsed time: 8179 seconds
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aL
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic, Slice Registers, Register as Flip Flop]", 8, false); // l
+// Elapsed time: 61 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true, false, false, false, false, true); // l - Double Click - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Memory]", 9, true); // l - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 194 MB. Current time: 10/19/23, 5:29:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 194 MB. Current time: 10/19/23, 5:59:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 6:29:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 6:59:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,483 MB. GUI used memory: 193 MB. Current time: 10/19/23, 7:29:59 PM CST
