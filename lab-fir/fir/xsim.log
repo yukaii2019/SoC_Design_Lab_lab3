@@ -2,8 +2,8 @@
 # xsim v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Thu Oct 19 15:11:19 2023
-# Process ID: 2358164
+# Start of session at: Thu Oct 19 20:13:26 2023
+# Process ID: 2523571
 # Current directory: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir
 # Command line: xsim -mode tcl -source {xsim.dir/fir_tb_elab/xsim_script.tcl}
 # Log file: /home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/xsim.log
@@ -640,4 +640,4 @@ OK: exp =           4, rdata =           4
 -----------Congratulations! Pass-------------
 $finish called at time : 67185 ns : File "/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/tb/fir_tb.v" Line 197
 exit
-INFO: [Common 17-206] Exiting xsim at Thu Oct 19 15:11:22 2023...
+INFO: [Common 17-206] Exiting xsim at Thu Oct 19 20:13:28 2023...

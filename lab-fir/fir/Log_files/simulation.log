@@ -621,3 +621,6 @@ OK: exp =           0, rdata =           0
 [PASS] [Pattern        599] Golden answer:        -915, Your answer:        -915
 OK: exp =           2, rdata =           6
 OK: exp =           4, rdata =           4
+---------------------------------------------
+-----------Congratulations! Pass-------------
+$finish called at time : 67185 ns : File "/home/ykhsieh/SoCDesignLab/caravel-soc_fpga-lab/lab-fir/fir/vvd_fir/project_1/project_1.srcs/sim_1/new/fir_tb.v" Line 197
