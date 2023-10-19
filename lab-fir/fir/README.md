@@ -8,3 +8,4 @@ This is the working directory for the SOC Design Lab lab 3.
 * Timing report: Timing_report/
 * Waveform: Waveform/*png (Details are documented in the report.）
 * Report: Report.pdf
+* vivado project: vvd_fir/project_1
